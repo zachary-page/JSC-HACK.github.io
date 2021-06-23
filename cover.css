@@ -169,4 +169,8 @@ body {
   .cover-container {
     width: 90%;
   }
+
+  .hideme {
+    opacity: 0;
+  }
 }
