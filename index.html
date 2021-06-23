@@ -7,29 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
+  <meta name="description" content="The annual Johnson Space Center Hackathon, hosted by the Emerge Employee Resource Group, brings together
+  game changers within the Johnson community to brainstorm unique solutions to complex issues that benefit from new perspectives across the center.
+  This innovation marathon encourages a diversity of thought that will help pave the way for Johnson as we embark on perhaps our most challenging
+  missions to come: the Moon by 2024, and then on to Mars.">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
   <title>JSC Hack 2021</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic" />
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+
   <!-- link rel="icon" href="/img/favicon.ico" -->
 
   <!-- Bootstrap -->
+  <!--
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+-->
 
   <!-- Custom styles for this template -->
-  <link href="../css/cover.css" rel="stylesheet">
+  <!--<link href="../css/cover.css" rel="stylesheet">-->
+  <link href="../css/app.css" rel="stylesheet">
+  <link href="../css/tailwind.min.css" rel="stylesheet">
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="JSC Hack 2021" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="#" />
   <meta property="og:title" content="JSC Hack 2021" />
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="The annual Johnson Space Center Hackathon, hosted by the Emerge Employee Resource Group, brings together
+  game changers within the Johnson community to brainstorm unique solutions to complex issues that benefit from new perspectives across the center.
+  This innovation marathon encourages a diversity of thought that will help pave the way for Johnson as we embark on perhaps our most challenging
+  missions to come: the Moon by 2024, and then on to Mars." />
   <meta property="og:image" content="" />
 
   <!-- Favicon -->
@@ -40,83 +52,240 @@
 
 <body>
 
-  <div class="site-wrapper">
+  <div class="full-height-container"">
+      <div class=" block my-0">
+    <div class="block lg:hidden pb-2 my-0">
+      <template>
+        <b-navbar>
+          <template slot="brand">
+            <b-navbar-item tag="router-link">
+              <img src="./../img/Logo 1.svg" style="height: 100px; width: 100px;" class="cursor-pointer pl-2" @click="window.open('http://tamuhack.com/')">
+            </b-navbar-item>
+          </template>
+          <template slot="start">
+            <b-navbar-item>
+              <span href="#">Home</span>
+              <span href="#about">About</span>
+              <span href="#registration">Registration </span>
+              <span href="#schedule">Schedule</span>
+              <span href="#faq">FAQ </span>
+            </b-navbar-item>
+          </template>
+        </b-navbar>
+      </template>
+    </div>
+    <div class="hidden lg:block mx-24 pt-2">
+      <div class="flex float-left">
+        <div class="p-4">
+          <img src="./../img/Logo 1.svg" class="cursor-pointer" href="#" style="height: 100px; width: 100px;">
+        </div>
+      </div>
+      <div class="flex float-right text-lg inline-block mr-32 wide-nav">
+        <a href="#" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Home</a>
+        <a href="#about" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">About</a>
+        <a href="#registration" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Register</a>
+        <a href="#schedule" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Schedule</a>
+        <a href="#faq" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="page-content">
+      <div class="page-content-panel page-content-img lg:w-1/2">
 
-    <div class="site-wrapper-inner">
-
-      <div class="cover-container">
-
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand">JSC Hack 2021</h3>
-            <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#registration">Register</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#faq">FAQ</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div id="imageOne">
+          <img src="./../img/astronaut.jpg" id="customImageOne" />
         </div>
 
-        <div class="inner cover" style="height: 100vh; display: flex; justify-content: center; flex-direction: column; align-items: center;">
-          <h1 class="cover-heading">Dare. Unite. Explore. JSC Hack 2021.</h1>
-          <p class="lead">JSC Hackathon 2021<br>October 1-3, 2021<br>More details coming soon.</p>
-          <p class="lead">
-            <a href="#registration" class="btn btn-lg btn-default">Learn more</a>
-          </p>
+      </div>
+      <div class="page-content-panel page-content-right">
+        <h2 class="text-5xl font-bold leading-normal" style="margin-bottom: 0px;">
+          Dare. Unite. Explore.
+          <br />
+          JSC Hack 2021.
+        </h2>
+        <p class="text-lg pl-2 helper-text py-4 my-2">
+          Johnson Space Center
+          <br />
+          October 1-3 2021
+          <br />
+          Houston, TX
+          <br />
+        </p>
+        <div class="pb-4"></div>
+        <a href="https://register.tamuhack.com/" target="_blank" class="font-bold text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md th-pink-bg
+                              text-white hover:text-white hover:bg-pink-400">
+          Apply
+        </a>
+        <a href="registration" target="_blank" class="font-bold lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md th-pink-bg
+                          text-white hover:text-white hover:bg-pink-400">
+          Apply
+        </a>
+        <a href="#" target="_blank" class="font-bold discord-bg text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md
+                          text-white hover:text-white">
+          Join the Slack
+        </a>
+        <a href="#" target="_blank" class="font-bold discord-bg lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md
+                          text-white hover:text-white">
+          Join the Slack
+        </a>
+        <a href="#" target="_blank" class="font-bold text-center lg:mr-2 lg:w-1/2 sm:w-full hidden md:inline-block py-4 my-2 text-lg rounded-md th-pink-border
+                          th-pink-text hover:text-white hover:bg-pink-400">
+          Devpost
+        </a>
+        <a href="#" target="_blank" class="font-bold lg:mr-2 md:hidden sm:w-full block py-4 my-2 text-center text-lg rounded-md th-pink-border
+                          th-pink-text hover:text-white hover:bg-pink-400">
+          Devpost
+        </a>
+      </div>
+    </div>
 
+  </div>
+  </div>
+
+
+
+  <div class="full-height-container" id="about" style="margin-top: 100px;">
+    <div class="page-content mt-10 mb-5">
+      <div class="page-content-panel page-content-left">
+        <h2 class="text-5xl font-bold leading-normal padding-mobile2">
+          About JSC Hack
+        </h2>
+        <p class="md:text-lg pt-4 pb-8 padding-mobile2 font-light">
+          At JSC Hack, teams spend the weekend working on innovative software and hardware solutions to real-world problems in a community full of mentorship.
+        </p>
+        <p class="md:text-lg pb-8 padding-mobile2 font-light">
+          We'll provide you with all the resources and mentors you need to work on something cool. You'll have the freedom to create a product, learn new skills or just have fun working on a project with friends.
+        </p>
+        <p class="md:text-lg pb-8 padding-mobile2 font-light">
+          This year’s hackathon will be hosted at the ION with lots of workshops, events, and interactive competitions
+          to help create an engaging atmosphere.
+        </p>
+      </div>
+      <div class="page-content-panel lg:w-1/2">
+
+        <div class="spacer s0" id="trigger"></div>
+        <img id="myimg" src="./../img/astronaut2.jpg" class="custom-giant-image float-left">
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="full-height-container" id="registration" style="margin-top: 100px;">
+    <div class="page-content mt-10 mb-5">
+      <div id="registration" class="typeform-widget" data-url="https://form.typeform.com/to/d3v1Orvq?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 500px;"></div>
+      <script>
+        (function() {
+          var qs, js, q, s, d = document,
+            gi = d.getElementById,
+            ce = d.createElement,
+            gt = d.getElementsByTagName,
+            id = "typef_orm",
+            b = "https://embed.typeform.com/";
+          if (!gi.call(d, id)) {
+            js = ce.call(d, "script");
+            js.id = id;
+            js.src = b + "embed.js";
+            q = gt.call(d, "script")[0];
+            q.parentNode.insertBefore(js, q)
+          }
+        })()
+
+      </script>
+    </div>
+  </div>
+
+  <!--
+  <div id="Home" class="full-height-container">
+    <div class="block my-0">
+
+      <div class="lg:block mx-24 pt-2">
+        <div class="flex float-left">
+          <a href="#" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">JSC Hack 2021</a>
         </div>
 
-        <div id="registration" class="typeform-widget" data-url="https://form.typeform.com/to/d3v1Orvq?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 500px;"></div>
-        <script>
-          (function() {
-            var qs, js, q, s, d = document,
-              gi = d.getElementById,
-              ce = d.createElement,
-              gt = d.getElementsByTagName,
-              id = "typef_orm",
-              b = "https://embed.typeform.com/";
-            if (!gi.call(d, id)) {
-              js = ce.call(d, "script");
-              js.id = id;
-              js.src = b + "embed.js";
-              q = gt.call(d, "script")[0];
-              q.parentNode.insertBefore(js, q)
-            }
-          })()
-        </script>
+        <div class="flex float-right text-lg inline-block mr-32 wide-nav">
+          <a href="#" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Home</a>
+          <a href="#about" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">About</a>
+          <a href="#registration" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Register</a>
+          <a href="#schedule" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Schedule</a>
+          <a href="#faq" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">FAQ</a>
+        </div>
+      </div>
+    </div>
 
-        <div id="about"></div>
+    <div class="page-content">
 
-        <div id="schedule"></div>
+      <div class="page-content-panel page-content-img lg:w-1/2">
+        <h3> test </h3>
+      </div>
 
-        <div id="faq"></div>
+      <div class="page-content-panel page-content-right">
+        <h1 class="text-5xl font-bold leading-normal">Dare. Unite. Explore. JSC Hack 2021.</h1>
+        <p class="text-lg pl-2 helper-text py-4 my-2">Johnson Space Center<br>October 1-3, 2021<br>Houston, TX</p>
+        <p class="lead">
+          <a href="#registration" class="btn btn-lg btn-default">Learn more</a>
+        </p>
+      </div>
+    </div>
 
-        <!--<div class="mastfoot">
+  </div>
+
+  <div id="about" class="inner cover">
+    <p class="lead" style="align: left;">The annual Johnson Space Center Hackathon, hosted by the Emerge Employee Resource Group, brings together
+      game changers within the Johnson community to brainstorm unique solutions to complex issues that benefit from new perspectives across the center.
+      This innovation marathon encourages a diversity of thought that will help pave the way for Johnson as we embark on perhaps our most challenging
+      missions to come: the Moon by 2024, and then on to Mars.</p>
+  </div>
+
+  <div id="registration" class="typeform-widget" data-url="https://form.typeform.com/to/d3v1Orvq?typeform-medium=embed-snippet" data-transparency="100" style="width: 100%; height: 500px;"></div>
+  <script>
+    (function() {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+
+  </script>
+
+  <div id="schedule"></div>
+
+  <div id="faq"></div>
+
+  <!--<div class="mastfoot">
           <div class="inner">
             <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
           </div>
         </div>
-        -->
 
-      </div>
 
-    </div>
+  </div>
+
+  </div>
 
   </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Placed at the end of the document so the pages load faster
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
   <script>
     window.jQuery || document.write('<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/vendor/jquery.min.js"><\/script>')
+
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="../js/custom.js"></script>
+  <script src="../js/custom.js"></script>-->
 </body>
 
 </html>

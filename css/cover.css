@@ -171,3 +171,79 @@ body {
     width: 90%;
   }
 }
+
+.page-content {
+  width: 100vw;
+  display: table;
+}
+
+.page-content-panel {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+@media (min-width: 1024px) .lg\:w-1\/2 {
+  width: 50%;
+}
+
+.page-content-img {
+  z-index: 100;
+}
+
+@media only screen and (max-width: 1550px) .page-content-right {
+  ertical-align: middle;
+  width: 600px;
+  padding: 50px 150px 50px 50px;
+}
+
+@media only screen and (max-width: 1850px) .page-content-right {
+  vertical-align: middle;
+  width: 700px;
+  padding: 50px 150px 50px 0;
+}
+
+.page-content-right {
+  width: 1000px;
+  padding: 20px 250px 20px 50px;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: .5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.full-height-container {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
