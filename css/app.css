@@ -43,11 +43,11 @@ html {
 
 .page-content-panel {
   vertical-align: middle;
-  display: table-cell;
+  display: table-cell
 }
 
 .page-content-img {
-  z-index: 100;
+  z-index: 100
 }
 
 #customImageOne {
