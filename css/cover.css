@@ -191,7 +191,7 @@ body {
 }
 
 @media only screen and (max-width: 1550px) .page-content-right {
-  ertical-align: middle;
+  vertical-align: middle;
   width: 600px;
   padding: 50px 150px 50px 50px;
 }

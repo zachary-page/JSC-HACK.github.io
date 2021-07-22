@@ -4,23 +4,31 @@
 
 .text-5xl {
   margin-bottom: 25px;
-  font-family: Raleway, sans-serif !important
+  font-family: Courier New, sans-serif !important
+}
+
+.text-lg {
+  font-family: Courier New, sans-serif !important
 }
 
 .th-pink {
-  color: #f3859b !important
+  /*color: #f3859b !important*/
+  color: #000080 !important
 }
 
 .th-pink-bg {
-  background-color: #f3859b
+  /*background-color: #f3859b*/
+  background-color: #000080
 }
 
 .th-pink-border {
-  border: 1px solid #f3859b
+  /*border: 1px solid #f3859b */
+  border: 1px solid #000080
 }
 
 .th-pink-text {
-  color: #f3859b
+  /*color: #f3859b*/
+  color: #000080
 }
 
 html {
@@ -29,11 +37,12 @@ html {
 
 .full-height-container {
   background-color: #fff;
-  margin-bottom: 20px
+  margin-bottom: 0px
 }
 
 .hover-red-underline:hover {
-  border-bottom: 3px solid #f3859b
+  /*border-bottom: 3px solid #f3859b*/
+  border-bottom: 3px solid #000080
 }
 
 .page-content {
@@ -50,7 +59,16 @@ html {
   z-index: 100
 }
 
+#bannerimage {
+  width: 100%;
+  background-image: url(.../img/moonbanner.png);
+  height: 100px;
+  background-color: black;
+  background-position: center;
+}
+
 #customImageOne {
+  /*
   -webkit-mask:
     linear-gradient(to top, transparent 10%, #fff 15% 90%, transparent 95%),
     linear-gradient(to left, transparent 10%, #fff 15% 90%, transparent 95%);
@@ -64,12 +82,63 @@ html {
   mask-size: 110% 110%;
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-composite: intersect;
+  mask-composite: intersect; */
+  border-style: solid;
+  border-width: 5px;
+  margin: 10px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h2 {
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid blue;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: blue
+  }
+}
+
+bg-pink-400 {
+  background-color: white !important
 }
 
 #myimg {
-  -webkit-mask-image: linear-gradient(to left, black 80%, transparent);
+  /*-webkit-mask-image: linear-gradient(to left, black 80%, transparent);
   mask-image: linear-gradient(to left, black 80%, transparent)
+    */
+  border-style: solid;
+  border-width: 5px;
+  margin: 10px;
 }
 
 .page-content-right {
