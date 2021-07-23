@@ -4,7 +4,8 @@
 
 .text-5xl {
   margin-bottom: 25px;
-  font-family: Courier New, sans-serif !important
+  font-family: Courier New, sans-serif !important;
+  color: white;
 }
 
 .text-lg {
@@ -47,7 +48,15 @@ html {
 
 .page-content {
   width: 100vw;
-  display: table
+  display: table;
+}
+
+.page-content-main {
+  width: 100vw;
+  display: table;
+  /*background-image: url(" ./../img/starry-sky.jpg");
+  background-repeat: no-repeat;*/
+  background-color: black;
 }
 
 .page-content-panel {
@@ -83,8 +92,6 @@ html {
   mask-position: center;
   mask-repeat: no-repeat;
   mask-composite: intersect; */
-  border-style: solid;
-  border-width: 5px;
   margin: 10px;
 }
 
