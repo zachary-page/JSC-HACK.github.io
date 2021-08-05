@@ -69,7 +69,8 @@
                 <span href="#about">About</span>
                 <span href="#registration">Registration </span>
                 <span href="#schedule">Schedule</span>
-                <span href="#faq">FAQ </span>
+                <span href="#faq">FAQ</span>
+                <span href="#contact">Contact</span>
               </b-navbar-item>
             </template>
           </b-navbar>
@@ -87,6 +88,7 @@
           <a href="#registration" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Apply</a>
           <a href="#schedule" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Schedule</a>
           <a href="#faq" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">FAQ</a>
+          <a href="#contact" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Contact</a>
         </div>
       </div>
     </div>
@@ -571,7 +573,7 @@
               </h2>
               <p class="py-4 text-base lg:text-lg gray-text font-light padding-mobile4">
                 Email us with any questions, comments, concerns at <a
-                  href="mailto:&#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#101;&#046;&#099;&#108;&#117;&#099;&#107;&#064;&#110;&#097;&#115;&#097;&#046;&#103;&#111;&#118">natalie.e.cluck@nasa.gov</a>.
+                  href="mailto:&#074;&#083;&#067;&#045;&#069;&#109;&#101;&#114;&#103;&#101;&#064;&#109;&#097;&#105;&#108;&#046;&#110;&#097;&#115;&#097;&#046;&#103;&#111;&#118">JSC-Emerge@mail.nasa.gov</a>.
               </p>
             </div>
           </div>
@@ -581,12 +583,47 @@
     </div>
   </div>
 
+  <!-- Contact -->
+  <div class="full-height-container" id="contact">
+    <div class="faq-container">
+      <h2 class="text-5xl th-pink font-bold leading-normal">
+        Contact Us
+      </h2>
+      <h3 class="text-xl th-pink leading-normal">
+        Have a question? Interested in sponsoring? Send us a message!
+      </h3>
+
+      <form style="margin-top: 50px;" action="../php/contact.php" method="post" name="submit">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Margaret Hamilton">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="marg_ham_i_am@gmail.com">
+
+        <label for="topic">Topic</label>
+        <select class="select" id="topic" name="topic">
+          <option value="question">General Question</option>
+          <option value="sponsor">Sponsoring</option>
+          <option value="volunteer">Volunteering</option>
+          <option value="other">Something Else</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea class="textarea" id="message" name="message" placeholder="I have a question about JSC Hack..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </div>
+
   <!-- Footer -->
   <div style="height: 314px;">
     <div class="faq-container" style="padding-top: 0px !important; padding-bottom: 0px !important;">
       <p style="padding-top: 200px;" class="sponsor-offset">
         Interested in sponsoring? Please reach out to <a class="underline"
-          href="mailto:&#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#101;&#046;&#099;&#108;&#117;&#099;&#107;&#064;&#110;&#097;&#115;&#097;&#046;&#103;&#111;&#118">natalie.e.cluck@nasa.gov</a>.
+          href="mailto:&#074;&#083;&#067;&#045;&#069;&#109;&#101;&#114;&#103;&#101;&#064;&#109;&#097;&#105;&#108;&#046;&#110;&#097;&#115;&#097;&#046;&#103;&#111;&#118">JSC-Emerge@mail.nasa.gov</a>.
       </p>
     </div>
   </div>
