@@ -72,7 +72,7 @@
                 <span href="#about">About</span>
                 <span href="#registration">Registration </span>
                 <span href="#schedule">Schedule</span>
-                <span href="promos.html">Promote</span>
+                <!--<span href="promos.html">Promote</span>-->
                 <span href="#faq">FAQ</span>
                 <span href="#contact">Contact</span>
               </b-navbar-item>
@@ -90,7 +90,7 @@
           <a href="#about" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">About</a>
           <a href="#registration" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Register</a>
           <a href="#schedule" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Schedule</a>
-          <a href="promos.html" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Promote</a>
+          <!--<a href="promos.html" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Promote</a>-->
           <a href="#faq" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">FAQ</a>
           <a href="#contact" class="font-semibold text-gray-700 hover:text-black mr-24 pt-4 px-2 hover-red-underline">Contact</a>
         </div>
@@ -221,10 +221,10 @@
       <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1Z2AXm7_J3vyqB9HlMdVgh-FFes0hQGXeuftbDHEOE1dGCQ/viewform?embedded=true" width="100%" height="620px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
       <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCbzTL-dX1TftWTLO2Reh1Q8PXPzBMm4tvv0S3wxMYklabA/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
       <!-- Noscript content for added SEO -->
-      <noscript><a href="https://jsc-hack-2023.eventbrite.com" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+      <noscript><a href="https://jsc-hack-2023.eventbrite.com" rel="noopener noreferrer" target="_blank">Click Here to Register on Eventbrite</a></noscript>
       <!-- You can customize this button any way you like -->
-      <button id="eventbrite-widget-modal-trigger-539722433327" type="button">Buy Tickets</button>
-
+      <!--<button id="eventbrite-widget-modal-trigger-539722433327" class="registerButton" type="button">Click Here to Register on Eventbrite</button>
+      
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
       <script type="text/javascript">
@@ -239,7 +239,28 @@
               modalTriggerElementId: 'eventbrite-widget-modal-trigger-539722433327',
               onOrderComplete: exampleCallback
           });
-      </script>
+      </script>-->
+
+      <div id="eventbrite-widget-container-539722433327"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '539722433327',
+        iframeContainerId: 'eventbrite-widget-container-539722433327',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
 
 
 
