@@ -544,7 +544,10 @@ Don't miss out on this amazing event - mark your calendars and get ready for an 
 
       <!-- Noscript content for added SEO -->
 	  <!-- Registration not open yet.-->
-      <div id="eventbrite-widget-container-910027044387"></div>
+      <!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/jsc-hack-2024-tickets-910027044387" rel="noopener noreferrer" target="_blank">Register for Free on Eventbrite</a></noscript>
+<!-- You can customize this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-910027044387" type="button">Buy Tickets</button>
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -554,14 +557,11 @@ Don't miss out on this amazing event - mark your calendars and get ready for an 
     };
 
     window.EBWidgets.createWidget({
-        // Required
         widgetType: 'checkout',
         eventId: '910027044387',
-        iframeContainerId: 'eventbrite-widget-container-910027044387',
-
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-910027044387',
+        onOrderComplete: exampleCallback
     });
 </script>
     </div>
