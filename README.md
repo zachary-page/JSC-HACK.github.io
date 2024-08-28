@@ -1,2 +1,0 @@
-# JSCHACK
-Website for JSCHACK
